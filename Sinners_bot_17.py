@@ -48,7 +48,7 @@ async def handle_private(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 text=f"{header_text}\n\n{message.text}",
                 parse_mode=ParseMode.MARKDOWN
             )
-        await message.reply_text("✅ Дякую! Я мені прийшло твоє повідомлення, але так як сервера працюють нестабільно то дочекайтесь з'єднання, не засмучуйтесь через це, адже я ще вчусь і є не стабільним.")
+        await message.reply_text("✅ Дякую! Мені прийшло твоє повідомлення, але так як сервера працюють нестабільно то дочекайтесь з'єднання, не засмучуйтесь через це, адже я ще вчусь і є не стабільним.")
 
     elif message.photo:
         caption = message.caption or ""
